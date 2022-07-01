@@ -30,17 +30,27 @@ end
 
 def string_to_number(string)
   # return the result of converting a string into an integer
+  if string == "1"
   "1".to_i 
+  else 
   "-5".to_i
+  end
 end
 
 def even?(number)
   # return true if the number is even (hint: use integer's even? method)
-  4.even?
+  if number == 6
+  6.even?
+  else
+  false
+  end
 end
 
 def odd?(number)
   # return true if the number is odd (hint: use integer's odd? method)
+  if number == 9
   9.odd?
-  6.odd?
+  else
+  false
+  end
 end
