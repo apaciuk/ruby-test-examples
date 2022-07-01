@@ -1,26 +1,35 @@
 def nil_array(number)
   # return an array containing `nil` the given number of times
+  number = [nil] * number
 end
 
 def first_element(array)
   # return the first element of the array
+  number = array[0]
 end
 
 def third_element(array)
-  # return the third element of the array
+  # return the third element of the array 
+  number = array[2]
 end
 
 def last_three_elements(array)
   # return the last 3 elements of the array
-end
+  if number 
+  number = array[-3..-1] 
+  else 
+  number = array[-1..-1]
+  end
 
 def add_element(array)
   # add an element (of any value) to the array
+  array = array.push("nala cat")
+  
 end
 
 def remove_last_element(array)
   # Step 1: remove the last element from the array
-
+  array = array.first array.size - 1 
   # Step 2: return the array (because Step 1 returns the value of the element removed)
   array
 end
