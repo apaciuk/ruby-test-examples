@@ -73,33 +73,33 @@ RSpec.describe 'Array Exercises' do
 
   describe 'remove first three elements exercise' do
 
-    xit 'returns the array without the first three elements' do
+    it 'returns the array without the first three elements' do
       expect(remove_first_three_elements([1, 3, 5, 7, 9])).to eq([7, 9])
     end
 
-    xit 'returns an empty array when the array has less than 3 elements' do
+    it 'returns an empty array when the array has less than 3 elements' do
       expect(remove_first_three_elements(['foo', 'bar'])).to eq([])
     end
   end
 
   describe 'array concatenation exercise' do
 
-    xit 'returns an array adding two arrays of numbers together' do
+    it 'returns an array adding two arrays of numbers together' do
       expect(array_concatenation([1, 3, 5], [2, 4, 6])).to eq([1, 3, 5, 2, 4, 6])
     end
 
-    xit 'returns an array adding arrays of strings and numbers together' do
+    it 'returns an array adding arrays of strings and numbers together' do
       expect(array_concatenation(['a', 'b', 'c'], [1, 2, 3])).to eq(['a', 'b', 'c', 1, 2, 3])
     end
   end
 
   describe 'array difference exercise' do
 
-    xit 'returns an array subtracting two arrays of numbers' do
+    it 'returns an array subtracting two arrays of numbers' do
       expect(array_difference([0, 1, 1, 2, 3, 5], [0, 1, 2])).to eq([3, 5])
     end
 
-    xit 'returns an array subtracting two arrays of strings' do
+    it 'returns an array subtracting two arrays of strings' do
       expect(array_difference(['foo', 'bar', 'baz'], ['bar','hello'])).to eq(['foo', 'baz'])
     end
   end
